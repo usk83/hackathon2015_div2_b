@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3497FDB48F90280E117B943B /* libPods-Ryo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7400C2B48EE3B995B5563135 /* libPods-Ryo.a */; };
+		CEDD61801B80E5E80072768D /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEDD617F1B80E5E80072768D /* bg.jpg */; };
 		CEF8C8501B80A46000E0AC52 /* fan.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEF8C84F1B80A46000E0AC52 /* fan.gif */; };
 		F8D484D71B80663400B0C293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484D61B80663400B0C293 /* AppDelegate.swift */; };
 		F8D484D91B80663400B0C293 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484D81B80663400B0C293 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		7400C2B48EE3B995B5563135 /* libPods-Ryo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ryo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0300CF74497D5FD1CA482F3 /* Pods-Ryo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ryo/Pods-Ryo.debug.xcconfig"; sourceTree = "<group>"; };
 		CABAA95DD60394B2F67A24AD /* Pods-Ryo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryo/Pods-Ryo.release.xcconfig"; sourceTree = "<group>"; };
+		CEDD617F1B80E5E80072768D /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		CEF8C84F1B80A46000E0AC52 /* fan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fan.gif; sourceTree = "<group>"; };
 		CEF8C8511B80A69200E0AC52 /* Ryo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ryo-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8D484D11B80663400B0C293 /* Ryo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				F8D484DD1B80663400B0C293 /* Images.xcassets */,
 				F8D484DF1B80663500B0C293 /* LaunchScreen.xib */,
 				CEF8C84F1B80A46000E0AC52 /* fan.gif */,
+				CEDD617F1B80E5E80072768D /* bg.jpg */,
 				CEF8C8511B80A69200E0AC52 /* Ryo-Bridging-Header.h */,
 				F8D484D41B80663400B0C293 /* Supporting Files */,
 			);
@@ -222,6 +225,7 @@
 			files = (
 				CEF8C8501B80A46000E0AC52 /* fan.gif in Resources */,
 				F8D484E11B80663500B0C293 /* LaunchScreen.xib in Resources */,
+				CEDD61801B80E5E80072768D /* bg.jpg in Resources */,
 				F8D484DE1B80663400B0C293 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
