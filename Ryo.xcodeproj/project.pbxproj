@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8D484D71B80663400B0C293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484D61B80663400B0C293 /* AppDelegate.swift */; };
+		F8D484D91B80663400B0C293 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484D81B80663400B0C293 /* ViewController.swift */; };
+		F8D484DC1B80663400B0C293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D484DA1B80663400B0C293 /* Main.storyboard */; };
+		F8D484DE1B80663400B0C293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D484DD1B80663400B0C293 /* Images.xcassets */; };
+		F8D484E11B80663500B0C293 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D484DF1B80663500B0C293 /* LaunchScreen.xib */; };
+		F8D484ED1B80663700B0C293 /* RyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484EC1B80663700B0C293 /* RyoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D484E71B80663700B0C293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D484C91B80663300B0C293 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D484D01B80663400B0C293;
+			remoteInfo = Ryo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8D484D11B80663400B0C293 /* Ryo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D484D51B80663400B0C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D484D61B80663400B0C293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8D484D81B80663400B0C293 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8D484DB1B80663400B0C293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8D484DD1B80663400B0C293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8D484E01B80663500B0C293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F8D484E61B80663700B0C293 /* RyoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D484EB1B80663700B0C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D484EC1B80663700B0C293 /* RyoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D484CE1B80663400B0C293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D484E31B80663700B0C293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8D484C81B80663300B0C293 = {
+			isa = PBXGroup;
+			children = (
+				F8D484D31B80663400B0C293 /* Ryo */,
+				F8D484E91B80663700B0C293 /* RyoTests */,
+				F8D484D21B80663400B0C293 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D484D21B80663400B0C293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D484D11B80663400B0C293 /* Ryo.app */,
+				F8D484E61B80663700B0C293 /* RyoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D484D31B80663400B0C293 /* Ryo */ = {
+			isa = PBXGroup;
+			children = (
+				F8D484D61B80663400B0C293 /* AppDelegate.swift */,
+				F8D484D81B80663400B0C293 /* ViewController.swift */,
+				F8D484DA1B80663400B0C293 /* Main.storyboard */,
+				F8D484DD1B80663400B0C293 /* Images.xcassets */,
+				F8D484DF1B80663500B0C293 /* LaunchScreen.xib */,
+				F8D484D41B80663400B0C293 /* Supporting Files */,
+			);
+			path = Ryo;
+			sourceTree = "<group>";
+		};
+		F8D484D41B80663400B0C293 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8D484D51B80663400B0C293 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8D484E91B80663700B0C293 /* RyoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D484EC1B80663700B0C293 /* RyoTests.swift */,
+				F8D484EA1B80663700B0C293 /* Supporting Files */,
+			);
+			path = RyoTests;
+			sourceTree = "<group>";
+		};
+		F8D484EA1B80663700B0C293 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8D484EB1B80663700B0C293 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D484D01B80663400B0C293 /* Ryo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D484F01B80663700B0C293 /* Build configuration list for PBXNativeTarget "Ryo" */;
+			buildPhases = (
+				F8D484CD1B80663400B0C293 /* Sources */,
+				F8D484CE1B80663400B0C293 /* Frameworks */,
+				F8D484CF1B80663400B0C293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ryo;
+			productName = Ryo;
+			productReference = F8D484D11B80663400B0C293 /* Ryo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8D484E51B80663700B0C293 /* RyoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D484F31B80663700B0C293 /* Build configuration list for PBXNativeTarget "RyoTests" */;
+			buildPhases = (
+				F8D484E21B80663700B0C293 /* Sources */,
+				F8D484E31B80663700B0C293 /* Frameworks */,
+				F8D484E41B80663700B0C293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D484E81B80663700B0C293 /* PBXTargetDependency */,
+			);
+			name = RyoTests;
+			productName = RyoTests;
+			productReference = F8D484E61B80663700B0C293 /* RyoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D484C91B80663300B0C293 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Butanosuke;
+				TargetAttributes = {
+					F8D484D01B80663400B0C293 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F8D484E51B80663700B0C293 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F8D484D01B80663400B0C293;
+					};
+				};
+			};
+			buildConfigurationList = F8D484CC1B80663400B0C293 /* Build configuration list for PBXProject "Ryo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D484C81B80663300B0C293;
+			productRefGroup = F8D484D21B80663400B0C293 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D484D01B80663400B0C293 /* Ryo */,
+				F8D484E51B80663700B0C293 /* RyoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D484CF1B80663400B0C293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D484DC1B80663400B0C293 /* Main.storyboard in Resources */,
+				F8D484E11B80663500B0C293 /* LaunchScreen.xib in Resources */,
+				F8D484DE1B80663400B0C293 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D484E41B80663700B0C293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D484CD1B80663400B0C293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D484D91B80663400B0C293 /* ViewController.swift in Sources */,
+				F8D484D71B80663400B0C293 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D484E21B80663700B0C293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D484ED1B80663700B0C293 /* RyoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8D484E81B80663700B0C293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D484D01B80663400B0C293 /* Ryo */;
+			targetProxy = F8D484E71B80663700B0C293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8D484DA1B80663400B0C293 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D484DB1B80663400B0C293 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D484DF1B80663500B0C293 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D484E01B80663500B0C293 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8D484EE1B80663700B0C293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8D484EF1B80663700B0C293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D484F11B80663700B0C293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ryo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8D484F21B80663700B0C293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ryo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F8D484F41B80663700B0C293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryo.app/Ryo";
+			};
+			name = Debug;
+		};
+		F8D484F51B80663700B0C293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryo.app/Ryo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D484CC1B80663400B0C293 /* Build configuration list for PBXProject "Ryo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D484EE1B80663700B0C293 /* Debug */,
+				F8D484EF1B80663700B0C293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D484F01B80663700B0C293 /* Build configuration list for PBXNativeTarget "Ryo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D484F11B80663700B0C293 /* Debug */,
+				F8D484F21B80663700B0C293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8D484F31B80663700B0C293 /* Build configuration list for PBXNativeTarget "RyoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D484F41B80663700B0C293 /* Debug */,
+				F8D484F51B80663700B0C293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D484C91B80663300B0C293 /* Project object */;
+}
