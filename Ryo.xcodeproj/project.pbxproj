@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3497FDB48F90280E117B943B /* libPods-Ryo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7400C2B48EE3B995B5563135 /* libPods-Ryo.a */; };
+		CEF8C8501B80A46000E0AC52 /* fan.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEF8C84F1B80A46000E0AC52 /* fan.gif */; };
 		F8D484D71B80663400B0C293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484D61B80663400B0C293 /* AppDelegate.swift */; };
 		F8D484D91B80663400B0C293 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484D81B80663400B0C293 /* ViewController.swift */; };
 		F8D484DE1B80663400B0C293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D484DD1B80663400B0C293 /* Images.xcassets */; };
@@ -25,6 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7400C2B48EE3B995B5563135 /* libPods-Ryo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ryo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0300CF74497D5FD1CA482F3 /* Pods-Ryo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ryo/Pods-Ryo.debug.xcconfig"; sourceTree = "<group>"; };
+		CABAA95DD60394B2F67A24AD /* Pods-Ryo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryo/Pods-Ryo.release.xcconfig"; sourceTree = "<group>"; };
+		CEF8C84F1B80A46000E0AC52 /* fan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fan.gif; sourceTree = "<group>"; };
+		CEF8C8511B80A69200E0AC52 /* Ryo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ryo-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8D484D11B80663400B0C293 /* Ryo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D484D51B80663400B0C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D484D61B80663400B0C293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3497FDB48F90280E117B943B /* libPods-Ryo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +62,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		872CA302D1D4D00143E7A27D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0300CF74497D5FD1CA482F3 /* Pods-Ryo.debug.xcconfig */,
+				CABAA95DD60394B2F67A24AD /* Pods-Ryo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8D484C81B80663300B0C293 = {
 			isa = PBXGroup;
 			children = (
 				F8D484D31B80663400B0C293 /* Ryo */,
 				F8D484E91B80663700B0C293 /* RyoTests */,
 				F8D484D21B80663400B0C293 /* Products */,
+				872CA302D1D4D00143E7A27D /* Pods */,
+				FCBF9A97311915E1D574D263 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +98,8 @@
 				F8D484D81B80663400B0C293 /* ViewController.swift */,
 				F8D484DD1B80663400B0C293 /* Images.xcassets */,
 				F8D484DF1B80663500B0C293 /* LaunchScreen.xib */,
+				CEF8C84F1B80A46000E0AC52 /* fan.gif */,
+				CEF8C8511B80A69200E0AC52 /* Ryo-Bridging-Header.h */,
 				F8D484D41B80663400B0C293 /* Supporting Files */,
 			);
 			path = Ryo;
@@ -109,6 +130,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FCBF9A97311915E1D574D263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7400C2B48EE3B995B5563135 /* libPods-Ryo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8D484F01B80663700B0C293 /* Build configuration list for PBXNativeTarget "Ryo" */;
 			buildPhases = (
+				C705AFB982D37F819BB143C4 /* Check Pods Manifest.lock */,
 				F8D484CD1B80663400B0C293 /* Sources */,
 				F8D484CE1B80663400B0C293 /* Frameworks */,
 				F8D484CF1B80663400B0C293 /* Resources */,
+				1A9815B3E6A960EF33208104 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF8C8501B80A46000E0AC52 /* fan.gif in Resources */,
 				F8D484E11B80663500B0C293 /* LaunchScreen.xib in Resources */,
 				F8D484DE1B80663400B0C293 /* Images.xcassets in Resources */,
 			);
@@ -202,6 +234,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A9815B3E6A960EF33208104 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ryo/Pods-Ryo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C705AFB982D37F819BB143C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8D484CD1B80663400B0C293 /* Sources */ = {
@@ -279,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -317,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -326,21 +391,25 @@
 		};
 		F8D484F11B80663700B0C293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0300CF74497D5FD1CA482F3 /* Pods-Ryo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ryo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ryo/Ryo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		F8D484F21B80663700B0C293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CABAA95DD60394B2F67A24AD /* Pods-Ryo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ryo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ryo/Ryo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -397,6 +466,7 @@
 				F8D484F21B80663700B0C293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8D484F31B80663700B0C293 /* Build configuration list for PBXNativeTarget "RyoTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +475,7 @@
 				F8D484F51B80663700B0C293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
