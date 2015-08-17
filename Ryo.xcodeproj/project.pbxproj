@@ -15,6 +15,8 @@
 		F8D484E11B80663500B0C293 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D484DF1B80663500B0C293 /* LaunchScreen.xib */; };
 		F8D484ED1B80663700B0C293 /* RyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D484EC1B80663700B0C293 /* RyoTests.swift */; };
 		F8D485001B80F8F400B0C293 /* semi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8D484FF1B80F8F400B0C293 /* semi.mp3 */; };
+		F8D4850C1B81756200B0C293 /* furin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8D4850B1B81756200B0C293 /* furin.mp3 */; };
+		F8D4850E1B81762300B0C293 /* senpuki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8D4850D1B81762300B0C293 /* senpuki.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		F8D484EB1B80663700B0C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D484EC1B80663700B0C293 /* RyoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyoTests.swift; sourceTree = "<group>"; };
 		F8D484FF1B80F8F400B0C293 /* semi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = semi.mp3; sourceTree = "<group>"; };
+		F8D4850B1B81756200B0C293 /* furin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = furin.mp3; sourceTree = "<group>"; };
+		F8D4850D1B81762300B0C293 /* senpuki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = senpuki.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				F8D484DD1B80663400B0C293 /* Images.xcassets */,
 				F8D484DF1B80663500B0C293 /* LaunchScreen.xib */,
 				F8D484FF1B80F8F400B0C293 /* semi.mp3 */,
+				F8D4850B1B81756200B0C293 /* furin.mp3 */,
+				F8D4850D1B81762300B0C293 /* senpuki.mp3 */,
 				CEF8C84F1B80A46000E0AC52 /* fan.gif */,
 				CEF8C8511B80A69200E0AC52 /* Ryo-Bridging-Header.h */,
 				F8D484D41B80663400B0C293 /* Supporting Files */,
@@ -224,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D485001B80F8F400B0C293 /* semi.mp3 in Resources */,
+				F8D4850E1B81762300B0C293 /* senpuki.mp3 in Resources */,
 				CEF8C8501B80A46000E0AC52 /* fan.gif in Resources */,
 				F8D484E11B80663500B0C293 /* LaunchScreen.xib in Resources */,
+				F8D4850C1B81756200B0C293 /* furin.mp3 in Resources */,
 				F8D484DE1B80663400B0C293 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
