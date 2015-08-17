@@ -27,25 +27,41 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
 		var error:NSError?
 
 		super.viewDidLoad()
-		// self.view.backgroundColor = UIColor.blackColor()
-		//self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg.jpg")!)
-        
-        let backgroundImage = UIImageView(image: UIImage(named: "bg.jpg")!)
-        backgroundImage.contentMode = UIViewContentMode.ScaleAspectFill
-        backgroundImage.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-        self.view.addSubview(backgroundImage)
 
-		let path = NSBundle.mainBundle().pathForResource("fan", ofType: "gif")!
-		let url = NSURL(fileURLWithPath: path)!
-		let animatedImage = FLAnimatedImage(animatedGIFData: NSData(contentsOfURL: url))
+		let backgroundImage = UIImageView(image: UIImage(named: "bg.jpg")!)
+		backgroundImage.contentMode = UIViewContentMode.ScaleAspectFill
+		backgroundImage.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+		self.view.addSubview(backgroundImage)
 
-		backgroundAnimationImage.animatedImage = animatedImage
-//		backgroundAnimationImage.frame = view.bounds
-        backgroundAnimationImage.frame = CGRectMake(0,0,130,272)
-        backgroundAnimationImage.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 200)
+		// let path = NSBundle.mainBundle().pathForResource("fan", ofType: "gif")!
+		// let url = NSURL(fileURLWithPath: path)!
+		// let animatedImage = FLAnimatedImage(animatedGIFData: NSData(contentsOfURL: url))
 
-//		view.insertSubview(backgroundAnimationImage, atIndex: 0)
-        self.view.addSubview(backgroundAnimationImage)
+		// backgroundAnimationImage.animatedImage = animatedImage
+		// backgroundAnimationImage.frame = CGRectMake(0,0,290,580)
+		// backgroundAnimationImage.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 240)
+		// self.view.addSubview(backgroundAnimationImage)
+
+		let fanBack = UIImageView(image: UIImage(named: "fan_back.png")!)
+		fanBack.frame = CGRectMake(0, 0, 290, 580)
+		fanBack.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 240)
+		let fanFan = UIImageView(image: UIImage(named: "fan_fan.png")!)
+		fanFan.frame = CGRectMake(0, 0, 212, 212)
+		fanFan.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height / 2 - 52)
+
+		let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+		rotationAnimation.toValue = (M_PI / 180) * 360
+		rotationAnimation.duration = 0.2
+		rotationAnimation.repeatCount = HUGE
+		fanFan.layer.addAnimation(rotationAnimation, forKey: "rotateAnimation")
+
+		let fanFront = UIImageView(image: UIImage(named: "fan_front.png")!)
+		fanFront.frame = CGRectMake(0, 0, 290, 580)
+		fanFront.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 240)
+		self.view.addSubview(fanBack)
+		self.view.addSubview(fanFan)
+		self.view.addSubview(fanFront)
+
 
 		//reverbの設定
 		reverb.loadFactoryPreset(.SmallRoom)
