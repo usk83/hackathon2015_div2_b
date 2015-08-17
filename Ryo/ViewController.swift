@@ -28,24 +28,15 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
 
 		super.viewDidLoad()
 
-		let backgroundImage = UIImageView(image: UIImage(named: "bg.jpg")!)
+		let backgroundImage = UIImageView(image: UIImage(named: "bg.png")!)
 		backgroundImage.contentMode = UIViewContentMode.ScaleAspectFill
-		backgroundImage.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+		backgroundImage.frame = CGRectMake(50, 0, self.view.frame.size.width, self.view.frame.size.height)
 		self.view.addSubview(backgroundImage)
 
-		// let path = NSBundle.mainBundle().pathForResource("fan", ofType: "gif")!
-		// let url = NSURL(fileURLWithPath: path)!
-		// let animatedImage = FLAnimatedImage(animatedGIFData: NSData(contentsOfURL: url))
-
-		// backgroundAnimationImage.animatedImage = animatedImage
-		// backgroundAnimationImage.frame = CGRectMake(0,0,290,580)
-		// backgroundAnimationImage.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 240)
-		// self.view.addSubview(backgroundAnimationImage)
-
-		let fanBack = UIImageView(image: UIImage(named: "fan_back.png")!)
+		let fanBack = UIImageView(image: UIImage(named: "fan_back_.png")!)
 		fanBack.frame = CGRectMake(0, 0, 290, 580)
 		fanBack.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 240)
-		let fanFan = UIImageView(image: UIImage(named: "fan_fan.png")!)
+		let fanFan = UIImageView(image: UIImage(named: "fan_fan_.png")!)
 		fanFan.frame = CGRectMake(0, 0, 212, 212)
 		fanFan.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height / 2 - 52)
 
@@ -55,7 +46,7 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
 		rotationAnimation.repeatCount = HUGE
 		fanFan.layer.addAnimation(rotationAnimation, forKey: "rotateAnimation")
 
-		let fanFront = UIImageView(image: UIImage(named: "fan_front.png")!)
+		let fanFront = UIImageView(image: UIImage(named: "fan_front_.png")!)
 		fanFront.frame = CGRectMake(0, 0, 290, 580)
 		fanFront.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 240)
 		self.view.addSubview(fanBack)
