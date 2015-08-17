@@ -11,15 +11,22 @@ import AVFoundation
 
 class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate {
     var engine = AVAudioEngine()
-    var audioFilePlayer: AVAudioPlayerNode!
+    var audioFilePlayer_semi: AVAudioPlayerNode!
+    var audioFilePlayer_wind: AVAudioPlayerNode!
+    var audioFilePlayer_furin: AVAudioPlayerNode!
     let backgroundAnimationImage = FLAnimatedImageView()
-    var audioFile: AVAudioFile!
-
+    var audioFile_semi: AVAudioFile!
+    var audioFile_wind: AVAudioFile!
+    var audioFile_furin: AVAudioFile!
+    
 	override func viewDidLoad() {
         
-        audioFile = AVAudioFile(forReading: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("semi", ofType: "mp3")!), error: nil)
-        audioFilePlayer = AVAudioPlayerNode()
-        
+        audioFile_semi = AVAudioFile(forReading: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("semi", ofType: "mp3")!), error: nil)
+        audioFile_wind = AVAudioFile(forReading: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("senpuki", ofType: "mp3")!), error: nil)
+        audioFile_furin = AVAudioFile(forReading: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("furin", ofType: "mp3")!), error: nil)
+        audioFilePlayer_semi = AVAudioPlayerNode()
+        audioFilePlayer_wind = AVAudioPlayerNode()
+        audioFilePlayer_furin = AVAudioPlayerNode()
         
         //effectNodeの用意
         var reverb = AVAudioUnitReverb()
@@ -56,26 +63,50 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
         engine.attachNode(reverb)
         engine.attachNode(distortion)
         engine.attachNode(eq)
-        engine.attachNode(audioFilePlayer)
+        engine.attachNode(audioFilePlayer_semi)
+        engine.attachNode(audioFilePlayer_wind)
+        engine.attachNode(audioFilePlayer_furin)
         
         engine.connect(input, to: reverb, format: format)
         engine.connect(reverb, to: distortion, format: format)
         engine.connect(distortion, to: eq, format: format)
         engine.connect(eq, to: output, format: format)
-        engine.connect(audioFilePlayer, to: engine.mainMixerNode, format: audioFile.processingFormat)
-        
-        let formata = audioFile.processingFormat
-        let lengtha = AVAudioFrameCount(audioFile.length)
-        let buffera = AVAudioPCMBuffer(PCMFormat: formata, frameCapacity: lengtha)
-        audioFile.readIntoBuffer(buffera, error: nil)
+        engine.connect(audioFilePlayer_semi, to: engine.mainMixerNode, format: audioFile_semi.processingFormat)
+        engine.connect(audioFilePlayer_wind, to: engine.mainMixerNode, format: audioFile_wind.processingFormat)
+        engine.connect(audioFilePlayer_furin, to: engine.mainMixerNode, format: audioFile_furin.processingFormat)
         
         // engineを実行
         engine.startAndReturnError(nil)
         
-        audioFilePlayer.scheduleBuffer(buffera, atTime: nil, options: AVAudioPlayerNodeBufferOptions.Loops) { () -> Void in
+        let formata_semi = audioFile_semi.processingFormat
+        let lengtha_semi = AVAudioFrameCount(audioFile_semi.length)
+        let buffera_semi = AVAudioPCMBuffer(PCMFormat: formata_semi, frameCapacity: lengtha_semi)
+        audioFile_semi.readIntoBuffer(buffera_semi, error: nil)
+        
+        audioFilePlayer_semi.scheduleBuffer(buffera_semi, atTime: nil, options: AVAudioPlayerNodeBufferOptions.Loops) { () -> Void in
             
         }
-        audioFilePlayer.play()
+        audioFilePlayer_semi.play()
+        
+        let formata_wind = audioFile_wind.processingFormat
+        let lengtha_wind = AVAudioFrameCount(audioFile_wind.length)
+        let buffera_wind = AVAudioPCMBuffer(PCMFormat: formata_wind, frameCapacity: lengtha_wind)
+        audioFile_wind.readIntoBuffer(buffera_wind, error: nil)
+        
+        audioFilePlayer_wind.scheduleBuffer(buffera_wind, atTime: nil, options: AVAudioPlayerNodeBufferOptions.Loops) { () -> Void in
+            
+        }
+        audioFilePlayer_wind.play()
+        
+        let formata_furin = audioFile_furin.processingFormat
+        let lengtha_furin = AVAudioFrameCount(audioFile_furin.length)
+        let buffera_furin = AVAudioPCMBuffer(PCMFormat: formata_furin, frameCapacity: lengtha_furin)
+        audioFile_furin.readIntoBuffer(buffera_furin, error: nil)
+        
+        audioFilePlayer_furin.scheduleBuffer(buffera_furin, atTime: nil, options: AVAudioPlayerNodeBufferOptions.Loops) { () -> Void in
+            
+        }
+        audioFilePlayer_furin.play()
     }
 
 	override func didReceiveMemoryWarning() {
