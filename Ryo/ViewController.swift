@@ -9,6 +9,12 @@
 import UIKit
 import AVFoundation
 
+enum Power {
+	case low
+	case middle
+	case high
+}
+
 class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate {
 		var engine = AVAudioEngine()
 		var audioFilePlayer_semi: AVAudioPlayerNode!
@@ -18,6 +24,11 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
 		var audioFile_semi: AVAudioFile!
 		var audioFile_wind: AVAudioFile!
 		var audioFile_furin: AVAudioFile!
+
+		var power = Power.middle
+		let fanSwitch = UIButton(frame: CGRectMake(0,0,50,50))
+		let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+		let fanFan = UIImageView(image: UIImage(named: "fan_fan_.png")!)
 
 		override func viewDidLoad() {
 			super.viewDidLoad()
@@ -30,11 +41,9 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
 			let fanBack = UIImageView(image: UIImage(named: "fan_back_.png")!)
 			fanBack.frame = CGRectMake(0, 0, 290, 580)
 			fanBack.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height - 240)
-			let fanFan = UIImageView(image: UIImage(named: "fan_fan_.png")!)
+
 			fanFan.frame = CGRectMake(0, 0, 212, 212)
 			fanFan.center = CGPointMake(self.view.frame.width / 2, self.view.frame.height / 2 - 52)
-
-			let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
 			rotationAnimation.toValue = (M_PI / 180) * 360
 			rotationAnimation.duration = 0.2
 			rotationAnimation.repeatCount = HUGE
@@ -80,7 +89,7 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
 
 			//distortionの設定
 			distortion.preGain = 0
-			distortion.wetDryMix = 60
+			distortion.wetDryMix = 40
 
 			//eqの設定
 			eq.globalGain = 20
@@ -133,7 +142,39 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDele
 
 			}
 			audioFilePlayer_furin.play()
+
+			fanSwitch.layer.masksToBounds = true
+			fanSwitch.layer.cornerRadius = 25.0
+			fanSwitch.layer.position = CGPoint(x: self.view.bounds.width / 2, y:self.view.bounds.height-20)
+			fanSwitch.addTarget(self, action: "clickSwitch:", forControlEvents: .TouchUpInside)
+			self.view.addSubview(fanSwitch)
 		}
+
+	func clickSwitch(sender: UIButton) {
+		if (power == Power.high) {
+			power = Power.low
+			println("low")
+			rotationAnimation.duration = 0.5
+			fanFan.layer.addAnimation(rotationAnimation, forKey: "rotateAnimation")
+			audioFilePlayer_wind.volume = 0.1
+		}
+		else if (power == Power.middle) {
+			power = Power.high
+			println("high")
+			rotationAnimation.duration = 0.1
+			fanFan.layer.addAnimation(rotationAnimation, forKey: "rotateAnimation")
+
+            audioFilePlayer_wind.volume = 2
+		}
+		else if (power == Power.low) {
+			power = Power.middle
+			println("middle")
+			rotationAnimation.duration = 0.3
+			fanFan.layer.addAnimation(rotationAnimation, forKey: "rotateAnimation")
+
+            audioFilePlayer_wind.volume = 1
+		}
+	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
